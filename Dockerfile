@@ -30,6 +30,7 @@ COPY run_daemons.sh /beancount/run_daemons.sh
 COPY streamlit_frontend/.streamlit /home/beancount-user/.streamlit
 
 WORKDIR /workspace
+RUN sudo chown -R beancount-user .
 USER beancount-user
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
