@@ -7,6 +7,7 @@ BEANCOUNT_IMPORT_PORT=${BEANCOUNT_IMPORT_PORT:-8101}
 docker rm lazybean;
 docker run -it \
     -v $PWD/$1:/workspace \
+    -u `id -u` \
     -p ${FAVA_PORT}:5000 \
     -p ${BEANCOUNT_IMPORT_PORT}:8101 \
     -p ${LAZY_BEANCOUNT_PORT}:8501 \
