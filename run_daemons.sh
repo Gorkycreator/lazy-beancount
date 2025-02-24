@@ -1,10 +1,10 @@
 #!/bin/bash
 echo "================================================================"
-echo "Lazy Beancount is available on http://localhost:$LAZY_BEANCOUNT_PORT/"
+echo "Lazy Beancount is available on http://$HOST_IP:$LAZY_BEANCOUNT_PORT/"
 echo "(configurable via LAZY_BEANCOUNT_PORT environment variable)"
 echo ""
-echo "Fava available on http://localhost:$FAVA_PORT/"
-echo "Beancount-import available on http://localhost:$BEANCOUNT_IMPORT_PORT/"
+echo "Fava available on http://$HOST_IP:$FAVA_PORT/"
+echo "Beancount-import available on http://$HOST_IP:$BEANCOUNT_IMPORT_PORT/"
 echo "================================================================"
 echo ""
 
